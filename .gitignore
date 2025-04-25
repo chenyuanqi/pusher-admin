@@ -1,0 +1,23 @@
+# 前端忽略文件
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.development
+frontend/.env.production
+frontend/.vscode/
+frontend/.DS_Store
+frontend/package-lock.json
+frontend/yarn.lock
+
+# 后端忽略文件
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/.env.local
+backend/.env.development
+backend/.env.production
+backend/.vscode/
+backend/.DS_Store
+backend/package-lock.json
+backend/yarn.lock
