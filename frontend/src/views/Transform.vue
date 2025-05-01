@@ -194,8 +194,8 @@ const extractLinkFromText = (text: string): string => {
 
 // 提取淘宝口令
 const extractTaobaoCode = (text: string): string => {
-  // 匹配淘宝口令格式（数字+￥+字母数字+空格+字母数字+￥）
-  const codeRegex = /(\d+￥\s*[A-Za-z0-9]+\s+[A-Za-z0-9]+\s*￥)/
+  // 修改正则表达式，支持 h:/ 前缀
+  const codeRegex = /(h:\/)?\w+￥\s*[A-Za-z0-9]+\s+[A-Za-z0-9]+\s*￥/
   const matches = text.match(codeRegex)
 
   if (matches && matches.length > 0) {
